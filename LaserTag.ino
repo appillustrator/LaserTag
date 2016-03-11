@@ -20,16 +20,21 @@ for now I have ommited it to save space and time.
 #define NUMPIXELS   60 // Number of LEDs in strip
 #define PID 000000 //you need to make this unique for every player
 
-#define IRLED_PIN D1
+//out of the box colors for you to use if you want:
+#define GREEN 0x0000FF  //If these don't show up correctly it means your LED strip is configured to recieve colors in a different format
+#define RED 0xFF0000
+#define BLUE 0x00FF00
+
+#define IRLED_PIN D2
 #define MOTOR_PIN A4
 #define RELOAD_PIN D0
-#define FIRE_PIN D2
+#define FIRE_PIN D1
 #define SENSOR_PIN D3
 
-#define RELOAD_CLR 000000 //the color you want it to be while reloading (everyone should agree on this to avoid confusion)
-#define FIRE_CLR 000000 //the color you want it to be while fireing (everyone should agree on this to avoid confusion)
-#define DEAD_CLR 000000 //the color you want it to be while dead (everyone should agree on this to avoid confusion)
-#define TEAM_CLR 000000 //the color you want it to normally be (don't share with someone until team gamemode is added)
+#define RELOAD_CLR 0x000000 //the color you want it to be while reloading (everyone should agree on this to avoid confusion)
+#define FIRE_CLR 0x000000 //the color you want it to be while fireing (everyone should agree on this to avoid confusion)
+#define DEAD_CLR 0x000000 //the color you want it to be while dead (everyone should agree on this to avoid confusion)
+#define TEAM_CLR 0x000000 //the color you want it to normally be (don't share with someone until team gamemode is added)
 
 #define FULL_AMMO 100
 #define FULL_HEALTH 50
